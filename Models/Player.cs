@@ -5,7 +5,7 @@
         public int Id { get; set; }
         // Список ссылок на платформы
         public List<string> Links { get; set; } = new List<string>();
-        public required string Nickname { get; set; }
-        public required string position { get; set; } //e2
+        public  string Nickname { get; set; }
+        public  string position { get; set; } //e2
     }
 }
