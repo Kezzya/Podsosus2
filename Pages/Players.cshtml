@@ -1,0 +1,84 @@
+﻿@page
+@model Podsosus2.Pages.PlayersModel
+@{
+    // Список участников
+    var participants = new List<dynamic>
+    {
+        new { Name = "«jalekosha»", Status = "оффлайн", Links = new[] { "Твич", "Телеграм", "Донейшен", "Страница стримера" } },
+        new { Name = "«XEXETOC»", Status = "оффлайн", Links = new[] { "Твич", "Телеграм", "Донейшен", "Страница стримера" } },
+        new { Name = "«Kosiya»", Status = "оффлайн", Links = new[] { "Твич", "Телеграм", "Донейшен", "Страница стримера" } },
+        new { Name = "«bubastisx_x»", Status = "оффлайн", Links = new[] { "Твич", "Донейшен", "Страница стримера" } },
+        new { Name = "«skidrowbtw»", Status = "стримит", Links = new[] { "Твич", "Донейшен", "Страница стримера" } },
+           };
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <style>
+        .participant-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            width: 250px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #f9f9f9;
+        }
+
+        .participant-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .participant-status {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .participant-links a {
+            display: block;
+            margin: 4px 0;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .participant-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список участников</h1>
+    @foreach (var participant in participants)
+    {
+        <div class="participant-card">
+            <div class="participant-name">@participant.Name</div>
+            <div class="participant-status">Статус: @participant.Status</div>
+            <div class="participant-links">
+                @foreach (var link in participant.Links)
+                {
+                    if (link == "Твич")
+                    {
+                        // Извлекаем никнейм из поля Name
+                        var twitchName = participant.Name.Split('«', '»')[1].Trim(); // Берем часть между « и »
+
+                        // Создаем ссылку на Twitch
+                        <a href="https://twitch.tv/@twitchName" target="_blank">@link</a>
+                    }
+                    else
+                    {
+                        // Для других ссылок можно добавить обработку позже
+                        <span>@link</span>
+                    }
+                }
+            </div>
+        </div>
+    }
+</body>
+</html>

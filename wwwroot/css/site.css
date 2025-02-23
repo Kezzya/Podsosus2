@@ -1,0 +1,404 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.tw-mask {
+    -webkit-mask: center repeat;
+    -webkit-mask-size: var(--tw-size) auto;
+    -webkit-mask-image: var(--tw-image);
+    opacity: var(--tw-opacity)
+}
+
+.tw-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: var(--tw-background)
+}
+
+.tw-canvas.tw-mask + .tw-pattern {
+    background-image: none;
+    opacity: initial;
+    filter: none
+}
+
+.tw-canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.tw-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    background: center repeat;
+    background-size: var(--tw-size) auto;
+    background-image: var(--tw-image);
+    filter: blur(var(--tw-blur));
+    opacity: var(--tw-opacity)
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none
+}
+
+a:visited {
+    color: #fff
+}
+
+div#dice-box canvas {
+    width: 100%;
+    height: 100%
+}
+
+button.MuiButton-root {
+    text-transform: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px
+}
+
+    button.MuiButton-root p {
+        margin: 0;
+        display: inline
+    }
+
+.MuiDialogTitle-root {
+    background-color: #222;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+.MuiDialogActions-root {
+    background-color: #222;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+.MuiDialogContent-root {
+    background-color: #222
+}
+
+div.MuiDialog-paper {
+    border-radius: 20px
+}
+
+div.MuiOutlinedInput-root {
+    border: 2px solid #414141;
+    border-radius: 10px
+}
+
+    div.MuiOutlinedInput-root > fieldset {
+        border: none
+    }
+
+label.MuiInputLabel-shrink {
+    display: none
+}
+
+div.MuiAccordionSummary-root:hover {
+    background-color: #2f2f2f
+}
+
+th.MuiTableCell-head {
+    padding-bottom: 5px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+td.MuiTableCell-root {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0
+}
+
+thead > tr.MuiTableRow-root > th {
+    padding-top: 0;
+    border-bottom: 0
+}
+
+tbody > tr.MuiTableRow-root {
+    vertical-align: top;
+    border: 0
+}
+
+    tbody > tr.MuiTableRow-root > td:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px
+    }
+
+    tbody > tr.MuiTableRow-root > td:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px
+    }
+
+span.MuiRating-root {
+    align-self: center
+}
+
+span.MuiRating-decimal {
+    margin-right: 5px
+}
+
+div.Mui-focused {
+    border: 2px solid #007aff
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #414141;
+    border-radius: 20px
+}
+
+::-webkit-scrollbar-corner {
+    background: #0000
+}
+
+@-moz-document url-prefix() {
+    * {
+        scrollbar-color: #414141 #0c0c0c
+    }
+}
+
+* {
+    scrollbar-width: auto
+}
+
+div.MuiInputBase-root > input {
+    padding: 0;
+    font-weight: 500
+}
+
+div.MuiAutocomplete-inputRoot {
+    padding: 0 !important
+}
+
+div.MuiAutocomplete-root > div.MuiTextField-root {
+    padding: 0 !important
+}
+
+div.MuiAutocomplete-inputRoot > input {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 14px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important
+}
+
+div.MuiAutocomplete-root {
+    border: none
+}
+
+ul.MuiAutocomplete-listbox {
+    font-weight: 500
+}
+
+div.MuiAutocomplete-popper.MuiPopper-root {
+    padding: 0 0 3px;
+    border: 2px solid #007aff;
+    border-radius: 10px;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top: none
+}
+
+    div.MuiAutocomplete-popper.MuiPopper-root > div.MuiPaper-elevation > ul {
+        padding: 0;
+        background-color: #222
+    }
+
+div.MuiAutocomplete-root.Mui-expanded.has-options > div > div.MuiAutocomplete-inputRoot.Mui-focused {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+div.CustomSelect {
+    border: none
+}
+
+    div.CustomSelect > div.MuiSelect-select {
+        border: 2px solid #414141;
+        border-radius: 10px
+    }
+
+div.Mui-focused.CustomSelect > div.MuiSelect-select {
+    border: 2px solid #007aff;
+    border-radius: 10px
+}
+
+div.MuiInputBase-root > div.MuiSelect-select[aria-expanded=true] {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+div.MuiPaper-root.MuiPopover-paper.MuiMenu-paper {
+    border: 2px solid #007aff;
+    border-radius: 0 0 10px 10px/0px 0px 10px 10px !important;
+    border-top: none
+}
+
+    div.MuiPaper-root.MuiPopover-paper.MuiMenu-paper > ul {
+        padding: 0;
+        background-color: #222
+    }
+
+div.MuiOutlinedInput-root.customSearch {
+    border: 2px solid #222222;
+    border-radius: 10px
+}
+
+span.MuiSlider-mark {
+    display: none
+}
+
+span.MuiSlider-thumb:active {
+    box-shadow: none
+}
+
+div#root {
+    padding-top: 15px
+}
+
+.mono {
+    font-family: IBM Plex Mono,monospace
+}
+
+.player-tile-button:hover {
+    background-color: #fff !important
+}
+
+.spinner {
+    border: 4px solid rgba(0,0,0,.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Golos Text,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url(/assets/golos-text_regular-BRNvgdMy.woff2) format("woff2"),url(/assets/golos-text_regular-BvXDBLVR.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url(/assets/golos-text_medium-Dv1VRl6H.woff2) format("woff2"),url(/assets/golos-text_medium-DC7f_e_q.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url(/assets/golos-text_demibold-CmP1702P.woff2) format("woff2"),url(/assets/golos-text_demibold-DIsVrdWf.woff) format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url(/assets/golos-text_bold-XEpxnKX-.woff2) format("woff2"),url(/assets/golos-text_bold-C0ZGyWEj.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url(/assets/golos-text_black-CKddirzI.woff2) format("woff2"),url(/assets/golos-text_black-CB0sK8NM.woff) format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: MursGothicMassive;
+    src: url(/static/fonts/MursGothic-MassiveDemi.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: MursGothicMassive;
+    src: url(/static/fonts/MursGothic-MassiveBlack.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: MursGothicWide;
+    src: url(/static/fonts/MursGothic-WideMedium.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal
+}
