@@ -5,13 +5,9 @@ namespace Podsosus2.Models
 {
     public class Cell
     {
-
-        public int id { get; set; } 
-        public string Title { get; set; } //e2
-        public double X { get; set; } //
-        public double Y { get; set; } // 
-        public double Z { get; set; }
+        public int Id { get; set; }
+        public string? Title { get; set; } // Теперь может быть null
     }
-        
-    
+
+
 }
